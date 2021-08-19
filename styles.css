@@ -8,4 +8,59 @@
 
 .user_avatar {
     border-radius: 50%;
+    width: 45px;
 }
+
+.header {
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+    box-shadow: 0 5px 8px -9px rgba(0, 0, 0, 0.75);
+}
+
+.header_left {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header_input {
+    display: flex;
+    align-items: center;
+    background-color: #eff2f5;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 999px;
+}
+
+.header_input input {
+    border: none;
+    background-color: transparent;
+    outline-width: 0;
+}
+
+.header_middle {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+  }
+  
+  .header_option .material-icons {
+    font-size: xx-large;
+    color: gray;
+  }
+  
+  .header_option:hover .material-icons {
+    color: #2e81f4;
+  }
+  
+  .header_option {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    cursor: pointer;
+  }
