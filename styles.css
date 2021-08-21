@@ -1,3 +1,4 @@
+/* header styling starts */
 * {
     margin: 0;
 }
@@ -47,20 +48,199 @@
     display: flex;
     flex: 1;
     justify-content: center;
-  }
+}
   
-  .header_option .material-icons {
+.header_option .material-icons {
     font-size: xx-large;
     color: gray;
-  }
+    transition: transform 100ms ease-in;
+}
   
-  .header_option:hover .material-icons {
+.header_option:hover .material-icons{
     color: #2e81f4;
-  }
+    transform: scale(1.07);
+}
   
-  .header_option {
+.header_option {
     display: flex;
     align-items: center;
     padding: 0 30px;
     cursor: pointer;
-  }
+}
+
+.header_option.active .material-icons {
+    color: #2e81f4;
+}
+
+.header_option.active {
+    border-bottom: 4px solid #2e81f4;
+}
+
+.header_option:hover {
+    background-color: #eff2f5;
+    border-radius: 10px;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.header_info {
+    display: flex;
+    align-items: center;
+}
+
+.header_info h4{
+    margin-left: 10px;
+}
+
+.header_right {
+    display: flex;
+    align-items: center;
+}
+
+.header_right .material-icons {
+    color:grey;
+    margin: 0 10px;
+}
+/* header styling ends */
+
+/* sidebar styling starts */
+.sidebarRow {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 100ms ease-in;
+}
+
+.sidebarRow:hover {
+    background-color: lightgray;
+    border-radius: 10px;
+    transform: scale(1.07);
+}
+
+.sidebarRow h4 {
+    margin-left: 20px;
+    margin-right: 600;
+}
+
+.sidebarRow .material-icons {
+    font-size: xx-large;
+    color: #2e81f4;
+}
+/* sidebar styling starts */
+
+/* story styling starts */
+.story {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 120px;
+    height: 200px;
+    box-shadow: 0px 5px 17px -7px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: transform 100ms ease-in;
+}
+
+.story:hover {
+    transform: scale(1.07);
+}
+
+.story_avatar {
+    margin: 10px;
+}
+
+.story h4 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+}
+
+.storyreel {
+    padding: 10px 0;
+    display: flex;
+}
+
+.main_body {
+    display: flex;
+}
+
+body {
+    background-color: #f1f2f5;
+}
+
+.feed {
+    flex: 1;
+    padding: 30px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar {
+    padding: 25px 10px;
+    flex: 0.33;
+}
+/* story styling ends */
+
+/* message sender styling starts */
+.messagesender {
+    display: flex;
+    margin: 30px;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 5px 7px -7px rgba(0, 0, 0, 0.75);
+    width: 100%;
+}
+
+.messagesender_top {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eff2f5;
+    padding: 15px;
+}
+
+.messagesender_top form {
+    flex: 1;
+    display: flex;
+}
+
+.messagesender_top form input{
+    flex: 1;
+    outline-width: 0;
+    border: none;
+    padding: 15px 20px;
+    margin: 0 10px;
+    border-radius: 999px;
+    background-color: #eff2f5;
+}
+
+.messagesender_bottom {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.messagesender_option {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    color: gray;
+    margin: 5px;
+}
+
+.messagesender_option h3 {
+    font-size: medium;
+    margin-left: 10px;
+}
+
+.messagesender_option:hover {
+    cursor: pointer;
+    background-color: #eff2f5;
+    border-radius: 20px;
+}
+/* message sender styling ends */
+
